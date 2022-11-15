@@ -9,7 +9,7 @@ import * from dw::io::http::Server
 import run, ReaderInput,RunSuccess,ExecutionFailure from dw::Runtime
 import dw::core::Binaries
 
-var serverConfig: {host: String, port: Number} = { host: "127.0.0.1", port: 8081 }
+var serverConfig: {host: String, port: Number} = { host: "localhost", port: 8081 }
 
 fun runTransform(transformRequest) = do {
     var inputs: Dictionary<ReaderInput> = {
