@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="parser-version" content="2.4.0-20210913205041.commit-efe2c0e">
+  <meta name="dw-monaco-version" content="3.1.1-20210219183842.commit-df75a04">
+  <meta name="dw-monaco-parser-version" content="2.3.0-20200908195750.commit-51c7d30">
+  <meta name="build-timestamp" content="12/30/2021, 12:15:59 PM">
+  <title>RevTech360 DW of the Week</title>
+  <link rel="shortcut icon" href="https://www.mulesoft.com/sites/all/themes/muletheme/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="anypoint-styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@3.4.1/dist/tippy.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://npmcdn.com/react@15.6.0/dist/react.js"></script>
+  <script src="https://npmcdn.com/react-dom@15.6.0/dist/react-dom.js"></script>
+  <script src="https://unpkg.com/tippy.js@3.4.1/dist/tippy.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+ 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN3P82MRWN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FN3P82MRWN');
+  
+    const inputsPayload = {
+        '45': '{\n    "message": "Hello world!"\n}',
+        '46': '{\n    "message": ["Mariano", "Leandro", "Julian"]\n}',
+        '47': '{\n    "message": [{"a":"a1","c":"c1"},{"a":"a2","c":"c2"}]\n}',
+        '48': '{\n    "ar1": [{"a":"a1","c":"c1"},{"a":"a2","c":"c2"}],\n "ar2": [{"a":"a1","b":"b1"},{"a":"a2","b":"b2"},{"a":"a3","b":"b3"}]\n}',
+        '49': '{\n    "message": [{"a":"a1","c":"c1"},{"a":"a2","c":"c2"}]\n}',
+    };
+    const outputsPayload = {
+        '45': '{\n    "message": "Hello world!"\n}',
+        '46': '"Leandro"',
+        '47': '[\n  "c1",\n  "c2"\n]',
+        '48': '{\n    { "a": "a1", "b": "b1" }, \n\t{ "a": "a2", "b": "b2" }, \n\t{ "a": "a3", "b": "b3" }, \n\t{ "a": "a1", "c": "c1" }, \n\t{ "a": "a2", "c": "c2" }\n}',
+        '49': '["a1","a2"]',
+    };
+
+    const nowValue = new Date();
+    const startDate = new Date(nowValue.getFullYear(), 0, 1);
+    const days = Math.floor((nowValue - startDate) /
+        (24 * 60 * 60 * 1000));
+    const weekNumber = Math.ceil(days / 7);
+    console.log('weekNumber selected:')
+    console.log(weekNumber);
+
+    localStorage.winnerOnce = 'false';
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems, {});
+    });
+  </script>
+</head>
+
+<body class="anypoint-styles">
+  <div id="root">
+    <h2 style="width: fit-content;font-family: monospace;">&nbsp;&nbsp; Weaving the RevTech360 Dataweave of the Week... &nbsp;<div style="
+    float: right;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+">  </div></h2>
+  </div>
+  <div id="modal1" class="modal modal-fixed-footer" style="display: none;">
+    <div class="modal-content">
+      <h4>Congratulations</h4>
+      <p>You have just completed the DataWeave Challenge of the Week. Would you like to share this on Twitter?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="https://twitter.com/intent/tweet?text=I%20just%20completed%20RevTech360%20DataWeave%20of%20the%20Week.&hashtags=RevTech360&url=https://dataweave.revtech360.com" 
+      target="_blank"
+      class="modal-close waves-effect waves-green btn-flat">Share</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+  <script src="bundle.js"></script>
+
+</body>
+
+</html>
