@@ -4,6 +4,7 @@
 
 ### Download Dataweave CLI
 https://github.com/mulesoft-labs/data-weave-cli
+
 I went with the manual installation of version at C:\Users\AmritSinghBains\.dw
 
 ### Version
@@ -30,4 +31,5 @@ docker push amritsinghbainsrevtech360/revtech360dw:latest
 
 ### To run the application
 docker run --rm -it -p 8083:8081 amritsinghbainsrevtech360/revtech360dw:latest
+
 And then go to on browser http://localhost:8083
