@@ -5,7 +5,7 @@
 ### Download Dataweave CLI
 https://github.com/mulesoft-labs/data-weave-cli
 
-I went with the manual installation of version at C:\Users\AmritSinghBains\.dw
+I went with the manual installation at C:\Users\AmritSinghBains\.dw
 
 ### Version
  - DataWeave Command Line : V1.0.9
