@@ -28,8 +28,12 @@ docker tag amritsinghbainsrevtech360/revtech360dw amritsinghbainsrevtech360/revt
 
 ### Push
 docker push amritsinghbainsrevtech360/revtech360dw:latest
+docker push amritsinghbainsrevtech360/revtech360dw:v1
 
 ### To run the application
 docker run --rm -it -p 8083:8081 amritsinghbainsrevtech360/revtech360dw:latest
 
 And then go to on browser http://localhost:8083
+
+### Expert testing
+To view a particular week's quiz go to http://localhost:8083/?weekNumber=20
