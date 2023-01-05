@@ -35,5 +35,5 @@ docker run --rm -it -p 8083:8081 amritsinghbainsrevtech360/revtech360dw:latest
 
 And then go to on browser http://localhost:8083
 
-### Expert testing
-To view a particular week's quiz go to http://localhost:8083/?weekNumber=20
+### Expert mode
+To view a particular week's quiz, go to http://localhost:8083/?weekNumber=20
